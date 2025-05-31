@@ -152,6 +152,7 @@ class _EditPhonePageState extends State<EditPhonePage> {
       int ramInt = int.parse(ram.text.trim());
 
       Phone updatedPhone = Phone(
+        id: widget.id,
         model: model.text.trim(),
         storage: inistorage,
         brand: brand.text.trim(),
